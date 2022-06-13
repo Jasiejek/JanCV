@@ -1,4 +1,7 @@
+table {
+    border: 2px solid black;
+}
 tr,
 td {
-    border: 1px solid red;
+    border: 1px dotted rgba(100, 0, 100);
 }
