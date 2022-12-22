@@ -4,62 +4,60 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="fav.ico" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap"
             rel="stylesheet"
         />
-
-        <link rel="stylesheet" href="css/styles.css" />
-        <title>😀Jasiejek😀 ༼ つ ◕_◕ ༽つ</title>
+        <link rel="stylesheet" href="./src/scss/index.css" />
+        <title>Jan Siejak - CV</title>
     </head>
     <body>
-        <header>
-            <div class="nav-box">
-                <div class="nav-logo">
-                    <img
-                        src="images/logo_kolko.png"
-                        width="50"
-                        alt="moje logo"
-                    />
-                    <span>Jasiejek</span>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="nav-link" href="O mnie">O mnie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="SMA">Sma</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Kontakt">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="nav">
+                    <li class="nav__item"><a href="#about">O MNIE</a></li>
+                    <li class="nav__item"><a href="contact">KONTAKT</a></li>
+                </ul>
+            </nav>
         </header>
-        <main class="container">
-            <section class="section">
-                <div class="section-card">
-                    <div class="section-content">
-                        <h1 class="section-title"><span>O MNIE</span></h1>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Doloremque error iure accusantium? Maxime
-                            nulla vel doloremque pariatur vitae cum magnam
-                            explicabo nisi. Cum saepe voluptatibus, mollitia
-                            dignissimos quibusdam molestiae assumenda animi
-                            exercitationem! Magnam commodi sequi consequuntur
-                            illo ratione quisquam provident?
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </main>
+        <div class="socials">
+            <ul class="socials__list">
+                <li class="socials__item">
+                    <a href="">
+                        <svg class="socials__svg">
+                            <use
+                                href="src/images/icons.svg#icon-facebook"
+                            ></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="">
+                        <svg class="socials__svg">
+                            <use
+                                href="src/images/icons.svg#icon-instagram"
+                            ></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="">
+                        <svg class="socials__svg twitch">
+                            <use href="src/images/icons.svg#icon-twitch"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="">
+                        <svg class="socials__svg">
+                            <use href="src/images/icons.svg#icon-youtube"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>

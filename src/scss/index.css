@@ -1,0 +1,72 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #2f863e;
+}
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover,
+a:hover:hover,
+a:active:hover,
+a:visited:hover {
+  color: #7cb833;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  font-weight: 700;
+  gap: 30px;
+}
+
+.socials {
+  position: fixed;
+  display: flex;
+}
+.socials__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socials__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7cb833;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.socials__item:hover {
+  background: white;
+}
+.socials__svg {
+  width: 40px;
+  height: 40px;
+  fill: #2f863e;
+}
+.socials__svg .twitch {
+  position: absolute;
+  top: -10px;
+}/*# sourceMappingURL=index.css.map */

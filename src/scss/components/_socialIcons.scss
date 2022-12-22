@@ -1,0 +1,35 @@
+@use "../../scss/pages/assets/assets" as *;
+
+.socials {
+    position: fixed;
+    display: flex;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.socials {
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $lime;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        &:hover {
+            background: white;
+        }
+    }
+    &__svg {
+        width: 40px;
+        height: 40px;
+        fill: $background;
+        .twitch {
+            position: absolute;
+            top: -10px;
+        }
+    }
+}
