@@ -4,60 +4,70 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="fav.ico" type="image/x-icon" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-        />
         <link rel="stylesheet" href="./src/scss/index.css" />
-        <title>Jan Siejak - CV</title>
+        <title>Jan Siejak</title>
     </head>
     <body>
         <header class="header">
-            <nav class="header__nav">
-                <ul class="nav">
+            <a class="logotype" href="index.html"
+                ><img
+                    class="logotype__img"
+                    src="./src/images/logo.png"
+                    alt="my logo"
+                /><span class="logotype__name">JAN SIEJAK</span></a
+            >
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home">GŁÓWNA</a>
+                    </li>
                     <li class="nav__item"><a href="#about">O MNIE</a></li>
-                    <li class="nav__item"><a href="contact">KONTAKT</a></li>
+                    <li class="nav__item"><a href="#contact">KONTAKT</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="socials">
-            <ul class="socials__list">
-                <li class="socials__item">
-                    <a href="">
-                        <svg class="socials__svg">
-                            <use
-                                href="src/images/icons.svg#icon-facebook"
-                            ></use>
-                        </svg>
-                    </a>
+        <main>
+            <section id="home">
+                <p>MOJA FACJATA</p>
+            </section>
+            <section id="about">
+                <p>O MNIE</p>
+                <p>ZAINTERESOWANIA</p>
+                <p>SMA</p>
+            </section>
+            <section id="contact">
+                <p>KONTAKT</p>
+            </section>
+        </main>
+        <footer>
+            <ul class="socials--footer">
+                <li>
+                    <a
+                        target="_blank"
+                        href="https://www.facebook.com/jan.siejak.32"
+                        >FACEBOOK</a
+                    >
                 </li>
-                <li class="socials__item">
-                    <a href="">
-                        <svg class="socials__svg">
-                            <use
-                                href="src/images/icons.svg#icon-instagram"
-                            ></use>
-                        </svg>
-                    </a>
+                <li>
+                    <a
+                        target="_blank"
+                        href="https://www.instagram.com/jasiejek/"
+                        >INSTAGRAM</a
+                    >
                 </li>
-                <li class="socials__item">
-                    <a href="">
-                        <svg class="socials__svg twitch">
-                            <use href="src/images/icons.svg#icon-twitch"></use>
-                        </svg>
-                    </a>
+                <li>
+                    <a
+                        target="_blank"
+                        href="https://www.youtube.com/channel/UCv31iz_DxKqOHPGZd13_qhg"
+                        >YOUTUBE</a
+                    >
                 </li>
-                <li class="socials__item">
-                    <a href="">
-                        <svg class="socials__svg">
-                            <use href="src/images/icons.svg#icon-youtube"></use>
-                        </svg>
-                    </a>
+                <li>
+                    <a target="_blank" href="https://www.twitch.tv/jasiejek"
+                        >TWITCH</a
+                    >
                 </li>
             </ul>
-        </div>
+        </footer>
     </body>
 </html>

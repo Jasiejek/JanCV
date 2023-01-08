@@ -1,4 +1,11 @@
-@use "./pages/basics/default";
-@use "./pages/basics/resets";
-@use "./pages/all";
-@use "./components/allComponents";
+@use "../scss/basic/reset";
+@use "../scss/basic/normalize";
+
+@use "../scss/body";
+@use "../scss/header";
+@use "../scss/nav";
+@use "../scss/main";
+@use "../scss/section";
+@use "../scss/footer";
+
+@use "./components/all";
