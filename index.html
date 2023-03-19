@@ -4,70 +4,94 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./src/scss/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./src/sass/index.css" />
         <title>Jan Siejak</title>
     </head>
     <body>
-        <header class="header">
-            <a class="logotype" href="index.html"
-                ><img
-                    class="logotype__img"
-                    src="./src/images/logo.png"
-                    alt="my logo"
-                /><span class="logotype__name">JAN SIEJAK</span></a
-            >
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home">GŁÓWNA</a>
-                    </li>
-                    <li class="nav__item"><a href="#about">O MNIE</a></li>
-                    <li class="nav__item"><a href="#contact">KONTAKT</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="home">
-                <p>MOJA FACJATA</p>
+        <div class="wrapper">
+            <section id="home" class="home">
+                <div class="photo">
+                    <img
+                        class="photo__image"
+                        src="./src/images/zdjecie1.png"
+                        alt="Moje zdjęcie"
+                    />
+                </div>
+                <h1 class="primary">JAN SIEJAK</h1>
+                <div class="button__list">
+                    <a class="linkToButton" href="#about">O MNIE</a>
+                    <a class="linkToButton" href="#procent">1 %</a>
+                </div>
             </section>
-            <section id="about">
-                <p>O MNIE</p>
-                <p>ZAINTERESOWANIA</p>
-                <p>SMA</p>
+            <section id="about" class="section">
+                <p class="section__title">O MNIE</p>
+                <p class="desc">
+                    Siema jestem
+                    <span class="desc__name">Jasiu</span>, mam 16 lat. Aktualnie
+                    uczę się w kierunku Technika Informatyki. Mam wiele
+                    zainteresowań: Ptaszniki, Latanie dronem, Fotografia,
+                    Filmowanie, Granie na różnych konsolach tych nowszych i tych
+                    starszych.
+                </p>
             </section>
-            <section id="contact">
-                <p>KONTAKT</p>
+            <section id="procent" class="section">
+                <p class="section__title">WESPRZYJ MNIE</p>
+                <div class="procent">
+                    <p class="desc">
+                        Od dziecka choruję na rdzeniowy zanik mięśni
+                        <a class="link-SMA" href=""><b>(SMA)</b></a
+                        >, choroba ta jest dla mnie bardzo dużym utrudnieniem w
+                        życiu codziennym, powoduje ona że moje mięśnie zanikają,
+                        przez co jestem bardzo osłabiony, i brakuje mi sił na
+                        wykonywanie najprostszych czynności, problemy z
+                        przemieszczaniem się, oddychaniem.
+                    </p>
+                    <div class="help">
+                        <p class="help__title">JAK MOŻESZ MI POMÓC ?</p>
+                    </div>
+                    <ul class="help__list">
+                        <li class="help__tabelka">
+                            <div class="tabelka">
+                                <p class="help__subtitle">
+                                    ROZLICZENIE Z PODATKU 1,5%
+                                </p>
+                                <img
+                                    src="./src/images/tabelka.png"
+                                    width="300"
+                                    height="100"
+                                    alt="tabelka 1%"
+                                />
+                            </div>
+                        </li>
+                        <li class="help__konto">
+                            <div>
+                                <p class="help__subtitle">
+                                    WPŁACAJĄC DAROWIZNĘ NA KONTO
+                                </p>
+                                <ul class="help__przelew">
+                                    <li>Fundacji Dzieciom, Zdążyć z pomocą</li>
+                                    <li>ul. Łomianki 5, 01-685 Warszawa</li>
+                                    <li>42 2490 0005 0000 4600 7549 3994</li>
+                                </ul>
+                                <p>Z dopiskiem</p>
+                                <p>
+                                    9581 Jan Siejak - darowizna na pomoc i
+                                    ochronę zdrowia
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
-        </main>
-        <footer>
-            <ul class="socials--footer">
-                <li>
-                    <a
-                        target="_blank"
-                        href="https://www.facebook.com/jan.siejak.32"
-                        >FACEBOOK</a
-                    >
-                </li>
-                <li>
-                    <a
-                        target="_blank"
-                        href="https://www.instagram.com/jasiejek/"
-                        >INSTAGRAM</a
-                    >
-                </li>
-                <li>
-                    <a
-                        target="_blank"
-                        href="https://www.youtube.com/channel/UCv31iz_DxKqOHPGZd13_qhg"
-                        >YOUTUBE</a
-                    >
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.twitch.tv/jasiejek"
-                        >TWITCH</a
-                    >
-                </li>
-            </ul>
-        </footer>
+            <section id="contact" class="section">
+                <p class="section__title">KONTAKT</p>
+            </section>
+        </div>
     </body>
 </html>
